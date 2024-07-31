@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A1A1A"
+    tools:context=".ViewAppointments">
+
+    <!-- Header -->
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/profileIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/ic_profile_icon"
+            tools:ignore="ContentDescription" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/settingsIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:background="@drawable/circular_foreground"
+            android:padding="5dp"
+            android:src="@drawable/settings_foreground"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:text="Ver Citas"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        tools:ignore="HardcodedText" />
+
+    <!-- Main Content -->
+    <LinearLayout
+        android:id="@+id/mainContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/title"
+        android:layout_marginTop="20dp"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
+
+        <!-- Date Display -->
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FEF445"
+            android:textSize="18sp"
+            android:padding="15dp"
+            android:background="#1A1A1A"
+            android:gravity="center_horizontal" />
+
+        <!-- Time Display -->
+        <TextView
+            android:id="@+id/textViewTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FEF445"
+            android:textSize="18sp"
+            android:padding="15dp"
+            android:background="#1A1A1A"
+            android:gravity="center_horizontal" />
+
+        <!-- Description Display -->
+        <TextView
+            android:id="@+id/textViewDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FEF445"
+            android:textSize="18sp"
+            android:padding="15dp"
+            android:background="#1A1A1A"
+            android:gravity="center_horizontal" />
+
+        <!-- Back Button -->
+        <Button
+            android:id="@+id/btnBackToSchedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#FEF445"
+            android:text="Volver"
+            android:textColor="#1A1A1A"/>
+    </LinearLayout>
+</RelativeLayout>

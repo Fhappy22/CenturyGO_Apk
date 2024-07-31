@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "684871751053",
+    "project_id": "prueba-de-registro-b237b",
+    "storage_bucket": "prueba-de-registro-b237b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:684871751053:android:5d5d34fe6e996458e119c4",
+        "android_client_info": {
+          "package_name": "com.example.centurygo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxTl34hi2BxQnL6HpE1m89QC3iyh8hvRY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

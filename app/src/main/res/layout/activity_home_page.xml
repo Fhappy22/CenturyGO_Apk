@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".HomePage">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/profileIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/ic_profile_icon"
+            tools:ignore="ContentDescription" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/settingsButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/circular_foreground"
+            android:drawableTop="@drawable/settings_foreground"
+            android:padding="5dp"
+            android:textColor="#000000"
+            android:textSize="0sp"
+            tools:ignore="ObsoleteLayoutParam,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/app_name"
+        android:textColor="#FFFFFF"
+        android:textSize="56sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/mainContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:maxWidth="400dp"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp">
+
+        <Button
+            android:id="@+id/buttonA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="#FEF445"
+            android:drawableLeft="@mipmap/book_icon"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="70dp"
+            android:paddingVertical="20dp"
+            android:text="@string/agendar_cita"
+            android:textColor="#1A1A1A"
+            android:textSize="18sp"
+            tools:ignore="VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/buttonV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="#FEF445"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="15dp"
+            android:text="@string/ver_citas"
+            android:textColor="#1A1A1A"
+            android:textSize="16sp"
+            tools:ignore="VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/buttonH"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="#FEF445"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="15dp"
+            android:text="@string/historial_citas"
+            android:textColor="#1A1A1A"
+            android:textSize="16sp"
+            tools:ignore="VisualLintButtonSize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/navButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:maxWidth="400dp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="20dp">
+
+        <Button
+            android:id="@+id/buttonB"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="#FEF445"
+            android:padding="10dp"
+            android:text="@string/atras"
+            android:textColor="#1A1A1A"
+            android:textSize="16sp"
+            tools:ignore="ButtonStyle,VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/buttonC"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:background="#FEF445"
+            android:padding="10dp"
+            android:text="@string/continuar"
+            android:textColor="#1A1A1A"
+            android:textSize="16sp"
+            tools:ignore="ButtonStyle,VisualLintButtonSize" />
+    </LinearLayout>
+
+</RelativeLayout>

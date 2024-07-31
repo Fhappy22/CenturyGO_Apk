@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CenturyGo</string>
+    <string name="agendar_cita">Agendar Cita</string>
+    <string name="ver_citas">Ver Citas</string>
+    <string name="historial_citas">¿Quienes somos?</string>
+    <string name="atras">Atras</string>
+    <string name="continuar">Continuar</string>
+</resources>

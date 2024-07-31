@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".Settings">
+
+    <!-- Header -->
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:layout_alignParentTop="true"
+        android:background="#1A1A1A"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/profileIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/ic_profile_icon"
+            tools:ignore="ContentDescription" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/settingsIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:src="@mipmap/settings"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:text="Ajustes"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        android:fontFamily="sans-serif"
+        android:layout_marginBottom="20dp"
+        tools:ignore="HardcodedText" />
+
+    <!-- Settings Items -->
+    <LinearLayout
+        android:id="@+id/settingsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="20dp"
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Change Theme -->
+        <LinearLayout
+            android:id="@+id/changeTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FEF445"
+            android:padding="15dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cambiar Tema"
+                android:textColor="#1A1A1A"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif"
+                tools:ignore="HardcodedText" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@mipmap/theme_icon"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+        <!-- Legal Information -->
+        <LinearLayout
+            android:id="@+id/legalInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FEF445"
+            android:padding="15dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Información Legal"
+                android:textColor="#1A1A1A"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif"
+                tools:ignore="HardcodedText" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@mipmap/info_icon"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+        <!-- Version Information -->
+        <LinearLayout
+            android:id="@+id/versionInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FEF445"
+            android:padding="15dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Información de la Versión"
+                android:textColor="#1A1A1A"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif"
+                tools:ignore="HardcodedText" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@mipmap/version_icon"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Navigation Buttons -->
+    <LinearLayout
+        android:id="@+id/navButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:padding="16dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Atrás"
+            android:textColor="#1A1A1A"
+            android:background="#FEF445"
+            android:fontFamily="sans-serif"
+            android:textSize="16sp"
+            tools:ignore="ButtonStyle,HardcodedText,VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/btnContinue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Continuar"
+            android:textColor="#1A1A1A"
+            android:background="#FEF445"
+            android:fontFamily="sans-serif"
+            android:textSize="16sp"
+            android:layout_marginStart="8dp"
+            tools:ignore="ButtonStyle,HardcodedText,VisualLintButtonSize" />
+    </LinearLayout>
+
+</RelativeLayout>

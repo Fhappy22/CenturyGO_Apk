@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary color (Button color) -->
+    <color name="yellow">#FEF445</color>
+    <color name="yellowDark">#FCE050</color>
+
+    <!-- Background color -->
+    <color name="black">#000000</color>
+
+    <!-- Text color -->
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#B0B0B0</color>
+
+
+</resources>

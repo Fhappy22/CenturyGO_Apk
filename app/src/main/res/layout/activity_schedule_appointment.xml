@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".ScheduleAppointment">
+
+    <!-- Header -->
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/profileIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/ic_profile_icon"
+            tools:ignore="ContentDescription" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/settingsIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:background="@drawable/circular_foreground"
+            android:padding="5dp"
+            android:src="@drawable/settings_foreground"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:text="Agendar Cita"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        android:fontFamily="sans-serif"
+        android:layout_marginBottom="20dp"
+        tools:ignore="HardcodedText" />
+
+    <!-- Main Content -->
+    <LinearLayout
+        android:id="@+id/mainContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/title"
+        android:layout_marginTop="20dp"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
+
+        <!-- Date Input -->
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:hint="Fecha"
+            android:padding="10dp"
+            android:textColor="#1A1A1A"
+            tools:ignore="Autofill,HardcodedText,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+        <!-- Time Input -->
+        <EditText
+            android:id="@+id/editTextTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:hint="Hora"
+            android:padding="10dp"
+            android:textColor="#1A1A1A"
+            tools:ignore="Autofill,HardcodedText,TextContrastCheck,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+        <!-- Description Input -->
+        <EditText
+            android:id="@+id/editTextDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:gravity="top"
+            android:hint="Descripción"
+            android:inputType="textMultiLine"
+            android:minHeight="80dp"
+            android:padding="10dp"
+            android:textColor="#1A1A1A"
+            tools:ignore="Autofill,HardcodedText,TextContrastCheck,VisualLintTextFieldSize" />
+
+        <!-- File Upload -->
+        <LinearLayout
+            android:id="@+id/fileUpload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:weightSum="1"
+            android:baselineAligned="false">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.2"
+                android:src="@mipmap/upload_icon"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:gravity="center"
+                android:text="Subir Archivo"
+                android:textColor="#1A1A1A"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif"
+                android:layout_marginStart="10dp"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Navigation Buttons -->
+    <LinearLayout
+        android:id="@+id/navButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Atrás"
+            android:textColor="#1A1A1A"
+            android:background="#FEF445"
+            android:fontFamily="sans-serif"
+            android:textSize="16sp"
+            tools:ignore="ButtonStyle,HardcodedText,VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/btnContinue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Continuar"
+            android:textColor="#1A1A1A"
+            android:background="#FEF445"
+            android:fontFamily="sans-serif"
+            android:textSize="16sp"
+            android:layout_marginStart="8dp"
+            tools:ignore="ButtonStyle,HardcodedText,VisualLintButtonSize" />
+    </LinearLayout>
+
+</RelativeLayout>

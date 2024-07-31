@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".Us">
+
+    <!-- Header -->
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/profileIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/ic_profile_icon"
+            tools:ignore="ContentDescription" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/settingsIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:background="@drawable/circular_foreground"
+            android:padding="5dp"
+            android:src="@drawable/settings_foreground"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:text="Sobre Nosotros"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        android:fontFamily="sans-serif"
+        android:layout_marginBottom="20dp"
+        tools:ignore="HardcodedText" />
+
+    <!-- Company Name -->
+    <TextView
+        android:id="@+id/companyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="CenturyLawyers"
+        android:textColor="#FEF445"
+        android:textSize="36sp"
+        android:fontFamily="sans-serif"
+        tools:ignore="HardcodedText" />
+
+    <!-- Description -->
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/companyName"
+        android:layout_marginTop="20dp"
+        android:padding="16dp"
+        android:text="En CenturyGO, somos abogados comprometidos con la excelencia. Nuestro equipo de profesionales está altamente capacitado para ofrecer asesoría legal de primera calidad, garantizando la mejor representación para nuestros clientes."
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"
+        tools:ignore="HardcodedText" />
+
+    <!-- App Version -->
+    <TextView
+        android:id="@+id/appVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="Versión Beta"
+        android:textColor="#FEF445"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif"
+        tools:ignore="HardcodedText" />
+
+    <!-- Navigation Buttons -->
+    <LinearLayout
+        android:id="@+id/navButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Atrás"
+            android:textColor="#1A1A1A"
+            android:background="#FEF445"
+            android:fontFamily="sans-serif"
+            android:textSize="16sp"
+            tools:ignore="ButtonStyle,HardcodedText,VisualLintButtonSize" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "652081397961",
+    "project_id": "basedelproyecto",
+    "storage_bucket": "basedelproyecto.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:652081397961:android:8d41f2661a6f5e840c0d18",
+        "android_client_info": {
+          "package_name": "com.example.centurygo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQRP5-SAXWT7_g_ijyQK4BrDT84FL8ZCI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
